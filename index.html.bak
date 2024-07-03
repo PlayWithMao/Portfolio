@@ -15,13 +15,11 @@
 </head>
 
 <body>
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
-	
 	<!-- navbar -->
+	<!--
 	<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
-            <a class="navbar-brand nav-brand-color" href="#">Николай</a>
+            <a class="navbar-brand nav-brand-color" href="#">Николай</a>	
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
 				<img src="images/nav.png" width="40" height="40" alt="">
@@ -31,9 +29,8 @@
 					<li class="nav-item active">
                         <a class="nav-link nav-text-color" href="#home">Главная</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link nav-text-color" href="#about">Обо мне</a>
-                    </li>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-text-color" href="#portfolio">Портфолио</a>
@@ -43,8 +40,10 @@
             </div>
         </div>
     </nav>
+	-->
 	
 	<!-- main banner -->
+	<!--
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
@@ -56,7 +55,9 @@
         </div>
     </section>
 	
+	
 	<!-- about section-->
+	<!--
     <section id="about">
         <div class="container mt-4 pt-4">
             <h1 class="text-center">Обо мне</h1>
@@ -93,6 +94,7 @@
                 </div>
             </div>
     </section>
+	-->
 	
 	<!-- portfolio section-->
     <br><br><br><section id="portfolio">
@@ -767,52 +769,6 @@
                         </div>
                     </div>
                 </div>
-				
-				<!--
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div id="game_12" class="carousel slide" data-bs-ride="carousel">
-							<div class="carousel-indicators">
-								<button type="button" data-bs-target="#game_12" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-								<button type="button" data-bs-target="#game_12" data-bs-slide-to="1" aria-label="Slide 2"></button>
-								<button type="button" data-bs-target="#game_12" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							</div>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img src="images/Screenshots/Helicopter/01.jpg" class="d-block w-100" alt="Скрин 1">
-								</div>
-								<div class="carousel-item">
-									<img src="images/Screenshots/Helicopter/02.jpg" class="d-block w-100" alt="Скрин 2">
-								</div>
-								<div class="carousel-item">
-									<img src="images/Screenshots/Helicopter/03.jpg" class="d-block w-100" alt="Скрин 3">
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#game_12" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Предыдущий</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#game_12" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Следующий</span>
-							</button>
-						</div>
-						
-						<br>
-						<div class="embed-responsive embed-responsive-16by9 thumb-wrap">
-							<iframe src="https://www.youtube.com/embed/nMVJxTcU8Kg" allowfullscreen"></iframe>
-						</div>
-						
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Helicopter Clicker</h4>
-                            <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Ссылка на игру</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				-->
             </div>
     </section>
 </body>
@@ -841,11 +797,11 @@
             return age;
         }
 
-        window.onload = function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const birthDate = '1995-10-15';
             const age = calculateAge(birthDate);
             document.getElementById('age').textContent = age;
-        };
+        });
 </script>
 <style>
 .link { text-decoration: none; color: navy; }
