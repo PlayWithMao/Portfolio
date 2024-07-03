@@ -841,11 +841,11 @@
             return age;
         }
 
-        window.onload = function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const birthDate = '1995-10-15';
             const age = calculateAge(birthDate);
             document.getElementById('age').textContent = age;
-        };
+        });
 </script>
 <style>
 .link { text-decoration: none; color: navy; }
